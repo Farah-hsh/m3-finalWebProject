@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب</title>
+    <link rel="stylesheet" href="../css/signin.css">
+</head>
+<body dir="rtl">
+    <div class="container">
+       
+        <form action=""class="form">
+            <h2>إنشاء حساب</h2>
+            <input type="text" name="username" class="box"
+            placeholder="اسم المستخدم" id="username">
+            <input type="email" name="email" class="box"
+            placeholder="البريد الالكتروني" id="email">
+            <input type="number" name="phone_num" class="box"
+            placeholder="رقم الهاتف" id="phone_num">
+            <input type="password" name="Password" class="box"
+            placeholder="كلمة المرور" id="password">
+            <button id="submit"  onclick="adding()"> إنشاء حساب</button>
+            <a href="#">نسيت كلمة المرور؟</a>
+        </form>
+        <div class="side">
+            
+    </div>
+        
+    </div>
+
+    <script>
+            const adding = () => {
+            const name= document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const phonenum = document.getElementById('phone-num').value;
+            const birthdate = document.getElementById('birth-date').value;
+            const password = document.getElementById('password').value;
+            console.log(adding())
+console.log(name);
+            const datauser = { username, email, phonenum, birthdate, password};
+            axios.post("https://64fdc847596493f7af7e8fc1.mockapi.io/api/v1/m3-users", datauser).then((response) => {
+                console.log("تمت الاضافة");   
+            });
+        }
+
+        
+    </script>
+</body>
+</html>
