@@ -22,7 +22,7 @@
             placeholder="كلمة المرور" id="password">
             <div id="user_type">
                 <h3>اختر نوع الحساب :</h3>
-                <select id="selecttyp">
+                <select id="selecttype">
                     <option id="1">حساب مستثمر</option>
                     <option id="2">حساب طارح فكرة</option>
                 </select>
@@ -37,27 +37,14 @@
             const email = document.getElementById('email').value;
             const phonenum = document.getElementById('phone_num').value;
             const password = document.getElementById('password').value;
-            const selecttyp = document.getElementById('selecttyp').value;
+            const selecttype = document.getElementById('selecttype').value;
 
-            const datauser = { username, email, phonenum, selecttyp, password};
+            const datauser = { username, email, phonenum, selecttype, password};
             axios.post("https://64fdc847596493f7af7e8fc1.mockapi.io/api/v1/m3-users", datauser).then((response) => {
+                window.location.href = './login.html'
                 console.log("تمت الاضافة");   
-            });
-            const type1 = document.getElementById('1').value;
-            const type2 = document.getElementById('2').value;
-
-
-            if (selecttyp === type1) {
-                Windows.location.href("../login.html")
-                
-            } else if (condition) {
-                Windows.location.href("page.html") 
-            } else {
-                alert("الرجاء اختيار نوع الحساب") 
-            }
+            });  
         }
-
-        
     </script>
 </body>
 </html>

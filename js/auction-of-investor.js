@@ -1,6 +1,6 @@
 // API 
 
-axios.get("https://64fdc847596493f7af7e8fc1.mockapi.io/api/v1/users").then((response)=> {
+axios.get("https://64fdc847596493f7af7e8fc1.mockapi.io/api/v1/m3-users").then((response)=> {
     const api= response.data;
     const apiTable= document.getElementById("container");
 
