@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Idea Submission</title>
+<link rel="stylesheet" href="../CSS/log.css"></head>
+<body dir="rtl">
+   <nav class="navbar">
+      <ul>
+          <li><a href="#home" id="home-link">الرئسية</a></li>
+          <li><a href="#about" id="about-link">كيف اطرح فكرتس</a></li>
+      
+      </ul>
+  </nav>
+  <section id="heading"> 
+     <h1>اهلا و سهلاً,<br>بأصحاب العقول المبدعلة و الأفكار الواعدة</h1>
+</section>
+
+
+   <form id="idea-form">
+      <div class="form">
+	
+         <div class="modal">
+            <div class="modal__header">
+               <span class="modal__title">اطرح فكرتك</span><button class="button button--icon"><svg width="24" viewBox="0 0 24 24" height="24" xmlns="http://www.w3.org/2000/svg">
+                     <path fill="none" d="M0 0h24v24H0V0z"></path>
+                     <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg></button>
+            </div>
+            <div class="modal__body">
+               <div class="input">
+                  <label class="input__label">اسم الفكرة </label>
+                  <input class="input__field" type="text"> 
+               </div>
+               <div class="input">
+                              <label class="input__label">نبذة الفكرة</label>
+                  <textarea class="input__field input__field--textarea"></textarea>
+                     <p class="input__description">أعط مشروعك وصفًا جيدًا حتى يعرف الجميع الهدف منه</p>
+               </div>
+               <label>انواع الملكية الفكرية :</label><br>
+               <div id="patentType">
+                   <input type="checkbox" name="patentType" value="المملكة السعودية العرية">  المملكة السعودية العربية<br>
+                   <input type="checkbox" name="patentType" value="الصين"> الصين<br>
+                   <input type="checkbox" name="patentType" value="الولايات المتاحيدة"> الولايات المتاحيدة<br>
+                   <input type="checkbox" name="patentType" value="كندا"> كندا<br>
+                   <!-- Add more countries here -->
+               </div><br>
+        
+               <div id="selectedCountries"></div><br>
+            </div>
+            <div class="modal__footer">
+               <button class="button button--primary">مدري</button>
+            </div>
+         </div>
+      </div>
+    
+    <script src="../JS/log.js"></script>
+</body>
+</html>
