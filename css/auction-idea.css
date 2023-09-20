@@ -1,0 +1,92 @@
+.card {
+    max-width: 350px;
+    border-radius: 1rem;
+    background-color: #E7E1DB;
+    padding: 1rem;
+  }
+  
+  .infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-gap: 2rem;
+    gap: 1rem;
+    margin-bottom: 30px;
+}
+  
+  
+  .info {
+    height: 7rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .name {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    color: #294C74;
+  }
+  
+  .function {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  
+  .stats {
+    width: 95%;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgba(0, 0, 0, 1);
+  }
+  
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 4px;
+  }
+  
+  .state-value {
+    font-weight: 700;
+    color: #F17633;
+  }
+  
+  .request {
+    margin-top: 1.5rem;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    transition: all .3s ease;
+  }
+  
+  .request:hover {
+    background-color: #294C74;
+    color: #fff;
+  }
+  .container{
+  display: flex;
+  }
+  .box{
+   margin-top: 1.5rem;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    transition: all .3s ease;
+    margin-left: 5px;
+  }
+  
