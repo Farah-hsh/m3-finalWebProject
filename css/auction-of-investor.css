@@ -15,9 +15,7 @@ h1{
 }
 
 .card {
-    --border-radius: 0.75rem;
-    --primary-color: #7257fa;
-    --secondary-color: #3c3852;
+    border-radius: 0.75rem;
     width: 210px;
     padding: 2rem;
     cursor: pointer;

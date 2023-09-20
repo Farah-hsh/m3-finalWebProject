@@ -4,71 +4,70 @@
     box-sizing: border-box;
 }
 body{
-    background-color:#f8f5f5;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+    background-color:#eeeae6;
 }
 /* / *container* / */
 .container{
     display: flex;
-    height: 500px;
-    width: 800px;
-    border: 1px solid black;
+    border: 1px solid #e4e2e2;
     margin: auto;
     margin-top: calc(8%);
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-/* login Frm */
-.form{
     display: flex;
     flex-direction:column;
-    width: 50%;
+    height: 500px;
+    width: 27%;
     align-items: center;
-    background-color: #e0dfdb;
+    background-color: #e4e2e2;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
-.form h2{
-    font-size: 2rem;
+h2{
+    font-size: 2.5rem;
     margin: 40px;
+    color:  #294c72;
 }
 .box{
     padding: 12px;
-    width: 65%;
+    width: 75%;
     margin: 15px;
-    border: 1px solid black;
+    border: 1px solid #e4e2e2;
     outline: none;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 #submit{
     padding: 12px 30px;
     width: 40%;
-    margin-top: 40px;
+    margin-top: 30px;
     background-color:#eae7e7;
     color: rgb(8, 8, 8);
     font-weight: bold;
     border: none;
-    border-radius: 20px;
+    border-radius: 8px;
     outline: none;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 #submit:hover{
-    background-color: #cac7c7;
+    background-color: #294c72;
     color: rgb(0, 0, 0);
+    transition: .3s;
 }
-.form a{
+a{
     text-decoration: none;
     color: black;
     margin-top: 20px;
+    cursor: pointer;
 }   
-.form a:hover{
-    color: beige;
+a:hover{
+    transform: scale(.9);
+    transition: .3s;
+    text-decoration: underline;
 }
 /* Right side */
 .side{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 50%;
 }
 
@@ -76,4 +75,26 @@ body{
     width: 450px;
     height: 500px;
 }
+.side h2{
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+#user_type{
+    display: flex;
+    justify-content: flex-start;
+  }
+  #selecttyp{
+    border-radius: 5px;
+    width: calc(9%);
+    
+  }
+  
+  h3{
+    margin-left: 10px;
+    margin-right: -50px;
+  }
 
+.fa-brands{
+    color: #595856;
+    margin-right: 10px;
+}

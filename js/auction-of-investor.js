@@ -1,11 +1,11 @@
 // API 
 
-axios.get("https://64fdc847596493f7af7e8fc1.mockapi.io/api/v1/users").then((response)=> {
+axios.get("https://65082eef56db83a34d9be320.mockapi.io/IDEAS").then((response)=> {
     const api= response.data;
-    const apiTable= document.getElementById("container");
+    const apiTable= document.getElementsByClassName("container");
 
     api.map((result) =>{
-        const row= document.createElement("tr");
+        const row= document.createElement("li");
         row.innerHTML=`
         <div class="card">
             <h3 class="card__title">${result.id}</h3>
@@ -18,7 +18,6 @@ axios.get("https://64fdc847596493f7af7e8fc1.mockapi.io/api/v1/users").then((resp
         </div>
         `
         apiTable.appendChild(row);
-   
         
     })  
 
