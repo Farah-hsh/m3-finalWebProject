@@ -11,86 +11,56 @@
 </head>
 <body dir="rtl">
     <div class="container">
-        <div class="side">
-            <h2>مرحبا مره اخرى</h2>
-            <i class="fa-solid fa-hand-point-left fa-4x"></i>  
-        </div>
         
             <h2>تسجيل دخول</h2>
             <input type="text" name="username" class="box"
             placeholder="اسم المستخدم" id="username">
             <input type="password" name="Password" class="box"
             placeholder="كلمة المرور" id="password">
-            <div id="user_type">
-                <h3>اختر نوع الحساب :</h3>
-                <select id="selecttype">
-                    <option id="1">حساب مستثمر</option>
-                    <option id="2">حساب طارح فكرة</option>
-                </select>
-            </div>
-            <input type="submit"  class="login"value="تسجيل دخول" id="submit" onclick="check()">
-            <a href="#">نسيت كلمة المرور؟</a>
-      
-        
-
-        
+            <input type="submit"  class="login"value="تسجيل دخول" id="submit" onclick="check()"><br><br>
+            <br>
+            <div class="icons">
+              <i class="fa-brands fa-google fa-2x"></i>
+              <i class="fa-brands fa-twitter fa-2x"></i>
+              <i class="fa-brands fa-github fa-2x"></i>
+            </div> 
     </div>
     <script>
-       
-       const check = () => {
-          const username = document.getElementById("username").value;
-          const password = document.getElementById("password").value;
-          const selecttype= document.getElementById("selecttype").value;
+const check = () => {
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
 
-      axios.get("https://64fdc847596493f7af7e8fc1.mockapi.io/api/v1/m3-users", {
-              username: username,
-              password: password,
-              selecttype: selecttype,
+  axios.get("https://64fdc847596493f7af7e8fc1.mockapi.io/api/v1/m3-users")
+    .then(function (response) {
+      const userData = response.data.find(user => user.username === username && user.password === password);
 
-            })
-            .then(function (response) {
-             
-                console.log("===================",response)
-
-              if (
-                response.data[0].username === username &&
-                response.data[0].password === password  &&
-                response.data[0].selecttype === "حساب  مستثمر"
-                
-              )
-
-              {
-                
-                Swal.fire({
-                  position: "top-end",
-                  icon: "success",
-                  title: "تم تسجيل دخولك بنجاح",
-                  showConfirmButton: false,
-                  timer: 2000,
-                });
-              } else if ( response.data[0].username === username &&
-                response.data[0].password === password  &&
-                response.data[0].selecttype === "حساب طارح فكرة") 
-                
-                {
-                window.location.href = "";
- 
-              } else {
-                Swal.fire({
-                  position: "top-end",
-                  icon: "warning",
-                  title: "تأكد من الاسم او الباسورد",
-                  showConfirmButton: false,
-                  timer: 3000,
-                });
-              }
-            })
-
-            .catch(function (error) {
-              statusMessage.innerText = "";
-              console.error("error", error);
-            });
-       }
+      if (userData) {
+        if (userData.selecttype === "حساب طارح فكرة") {
+          window.location.href = "/html/visitor.html";
+        } else if (userData.selecttype === "حساب مستثمر") {
+          window.location.href = "/html/auction-of-invester.html";
+        } 
+      } else {
+        Swal.fire({
+          position: "top-end",
+          icon: "warning",
+          title: "تأكد من الاسم أو الباسورد",
+          showConfirmButton: false,
+          timer: 3000,
+        });
+      }
+    })
+    .catch(function (error) {
+      console.error("error", error);
+      Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: "خطأ في الاتصال بالخادم",
+        showConfirmButton: false,
+        timer: 3000,
+      });
+    });
+};
 
     </script>
 </body>
