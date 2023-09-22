@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=REM&family=Tajawal:wght@300&display=swap');
+body{
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+  background-color: #F9F9F9;
+}
 .card {
-    max-width: 350px;
+   margin-right: calc(50%);
+    width: 600px;
     border-radius: 1rem;
-    background-color: #E7E1DB;
+    background-color: #D8D8D6;
     padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   }
   
   .infos {
     display: flex;
     flex-direction: row;
-    align-items: center;
     grid-gap: 2rem;
     gap: 1rem;
     margin-bottom: 30px;
@@ -20,14 +27,14 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+  
   }
   
   .name {
     font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 500;
-    color: #294C74;
+    color: #2F5D8C;
   }
   
   .function {
@@ -36,13 +43,12 @@
   }
   
   .stats {
-    width: 95%;
+    width: 97%;
     border-radius: 0.5rem;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #F9F9F9;
     padding: 0.5rem;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 0.75rem;
     line-height: 1rem;
     color: rgba(0, 0, 0, 1);
@@ -51,13 +57,13 @@
   .flex {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     margin: 0 4px;
   }
   
   .state-value {
     font-weight: 700;
-    color: #F17633;
+    color: #D55E2D;
   }
   
   .request {
@@ -69,11 +75,14 @@
     font-size: 1rem;
     line-height: 1.5rem;
     transition: all .3s ease;
+    font-family: 'REM', sans-serif;
+    font-family: 'Tajawal', sans-serif;
   }
   
   .request:hover {
-    background-color: #294C74;
+    background-color: #2F5D8C;
     color: #fff;
+    transition: .2s;
   }
   .container{
   display: flex;
@@ -88,5 +97,7 @@
     line-height: 1.5rem;
     transition: all .3s ease;
     margin-left: 5px;
+    font-family: 'REM', sans-serif;
+    font-family: 'Tajawal', sans-serif;
   }
   

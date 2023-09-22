@@ -1,100 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=REM&family=Tajawal:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background-color:#eeeae6;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+  background-color: #F9F9F9;
 }
 /* / *container* / */
 .container{
     display: flex;
-    border: 1px solid #e4e2e2;
+    border: 1px solid #2F5D8C;
     margin: auto;
     margin-top: calc(8%);
     border-radius: 10px;
     display: flex;
     flex-direction:column;
     height: 500px;
-    width: 27%;
+    width: 30%;
     align-items: center;
-    background-color: #e4e2e2;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #2F5D8C;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 h2{
     font-size: 2.5rem;
     margin: 40px;
-    color:  #294c72;
+    color:  #F9F9F9;
+    font-family: 'REM', sans-serif;
+    font-family: 'Tajawal', sans-serif;
 }
+
 .box{
     padding: 12px;
     width: 75%;
     margin: 15px;
-    border: 1px solid #e4e2e2;
+    border: 1px solid #F9F9F9;
     outline: none;
     border-radius: 10px;
+    font-family: 'REM', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
+
 #submit{
     padding: 12px 30px;
     width: 40%;
     margin-top: 30px;
-    background-color:#eae7e7;
-    color: rgb(8, 8, 8);
+    background-color:#D8D8D6;
+    color: #2F5D8C;
     font-weight: bold;
     border: none;
     border-radius: 8px;
     outline: none;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-family: 'REM', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #submit:hover{
-    background-color: #294c72;
-    color: rgb(0, 0, 0);
+    transform: scale(1.09);
     transition: .3s;
-}
-a{
-    text-decoration: none;
-    color: black;
-    margin-top: 20px;
-    cursor: pointer;
-}   
-a:hover{
-    transform: scale(.9);
-    transition: .3s;
-    text-decoration: underline;
-}
-/* Right side */
-.side{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
 }
 
-.side img{
-    width: 450px;
-    height: 500px;
-}
-.side h2{
-    font-size: 3rem;
-    margin-bottom: 50px;
-}
-#user_type{
-    display: flex;
-    justify-content: flex-start;
-  }
-  #selecttyp{
-    border-radius: 5px;
-    width: calc(9%);
-    
-  }
-  
-  h3{
-    margin-left: 10px;
-    margin-right: -50px;
-  }
 
 .fa-brands{
-    color: #595856;
+    color: #F9F9F9;
     margin-right: 10px;
+}
+.fa-brands:hover{
+    color: #D55E2D;
+    transition: .2s;
+
 }
