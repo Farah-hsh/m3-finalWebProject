@@ -4,6 +4,18 @@ body{
   font-family: 'Tajawal', sans-serif;
   background-color: #F9F9F9;
 }
+h1{
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 5%;
+  color: #2F5D8C;
+  margin-bottom: 8%;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+}
+#data-list{
+  margin-left: 50%;
+}
 .card {
    margin-right: calc(50%);
     width: 600px;
@@ -30,18 +42,22 @@ body{
   
   }
   
-  .name {
+  #idea_name {
     font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 500;
     color: #2F5D8C;
   }
   
-  .function {
+  #idea_description {
     font-size: 0.75rem;
     line-height: 1rem;
   }
-  
+  #idea_patentType{
+    font-weight: 700;
+    color: #D55E2D;
+
+  }
   .stats {
     width: 97%;
     border-radius: 0.5rem;

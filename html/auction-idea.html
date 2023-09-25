@@ -3,17 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اكثر عن الفكره</title>
+    <title>أكثر عن الفكرة</title>
     <link rel="stylesheet" href="../css/auction-idea.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body dir="rtl">
-    <div class="container">
-
-    </div>
-    <ul id="data-list"></ul>
-    <div id="list"></div>
-    <script src="../js/auction-idea.js"></script>
+    <h1>تفاصيل أكثر عن الفكرة</h1>
+    <ul id="data-list">
+        <tr>
+            <td>
+                <div class="card">
+                    <div class="infos">
+                        <div class="info">
+                            <div>
+                                 <p id="idea_name"></p>
+                                 <p id="idea_description"></p>
+                            </div>
+                                <div class="stats">
+                                     <p class="flex flex-col">نوع الملكية الفكرية <span id="idea_patentType"></span></p>
+                                     <p class="flex">الحد الأعلى للمزاد <span class="state-value"> 1,000,000,000 ر.س. </span> </p>     
+                                </div>
+                        </div>
+                    </div>
+                    <div class=container>
+                        <input  class="box" placeholder="اضف مزايدتك">
+                        <button class="request" type="button" >زايد الأن </button>
+                    </div>
+                    <ul id="listAuction"></ul>
+                </div>
+             </td>
+        </tr>
+    </ul>
+<script src="../js/auction-idea.js"></script>
 </body>
-</html>
