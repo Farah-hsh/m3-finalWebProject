@@ -8,36 +8,45 @@ if (ideaData) {
     document.getElementById('idea-details').innerHTML = 'No idea data available.';
 }
 
-let auctionValue = document.getElementsByClassName("box");
-const button = document.querySelector('.request');
-const listAuction=document.getElementById("listAuction");
+// let auctionValue = document.getElementsByClassName("box");
+const button = document.getElementById('request');
+// const listAuction=document.getElementById("listAuction");
+button.addEventListener("click",function(){
+    Swal.fire({
+                            position: "center",
+                            icon: "success",
+                            title: "الف مبروك! ربحت المزاد",
+                            showConfirmButton: false,
+                            timer: 3000,
+                          });
+        
 
+})
 
-button.addEventListener("click", addValue);
-function addValue(e){
-    e.preventDefault();
-    if(auctionValue.value != 1000000000){
-        const value = auctionValue.value;
+// button.addEventListener("click", function(){
+//     if(auctionValue.value != 1000000000){
+//         const value = auctionValue.value;
         
  
-        let newItem = document.createElement("li");
-        newItem.id = "newvalue" ;
+//         let newItem = document.createElement("li");
+//         newItem.id = "newvalue" ;
  
         
  
-        newItem.innerText = value;
-        listAuction.appendChild(newItem);
+//         newItem.innerText = value;
+//         listAuction.appendChild(newItem);
  
-    }else{
-        Swal.fire({
-                    position: "center",
-                    icon: "success",
-                    title: "الف مبروك! ربحت المزاد",
-                    showConfirmButton: false,
-                    timer: 3000,
-                  });
+//     }else{
+//         Swal.fire({
+//                     position: "center",
+//                     icon: "success",
+//                     title: "الف مبروك! ربحت المزاد",
+//                     showConfirmButton: false,
+//                     timer: 3000,
+//                   });
 
 
-    }
- 
- }
+//     }
+// })
+
+

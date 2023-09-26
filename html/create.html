@@ -5,9 +5,10 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Document</title>
           <link rel="stylesheet" href="../css/create.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body>
+<body dir="rtl">
           <div class="hamburger-menu">
                     <input id="menu__toggle" type="checkbox" />
                     <label class="menu__btn" for="menu__toggle">
@@ -21,14 +22,15 @@
                         <li><button id="signout">تسجيل خروج</button></li>
                     </ul>
                 </div>
-                
+                <h1>احلامك تقدر تتغير من مجرد فكرة إلى مشروع امامك!</h1>
 
           <form id="idea-form">
                     <div class="form">
                         
                        <div class="modal">
                           <div class="modal__header">
-                             <span class="modal__title">اطرح فكرتك</span><button class="button button--icon"><svg width="24" viewBox="0 0 24 24" height="24" xmlns="http://www.w3.org/2000/svg">
+                            
+                             <span class="modal__title">اطرح فكرتك الأن</span>
                                    <path fill="none" d="M0 0h24v24H0V0z"></path>
                                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg></button>
                           </div>
@@ -41,23 +43,23 @@
                                             <label class="input__label">نبذة الفكرة</label>
                                             <textarea class="description" name="description"></textarea>
                                             <p class="input__description">أعط مشروعك وصفًا جيدًا حتى يعرف الجميع الهدف منه</p>
-                                        </div>
+                                        </div><br>  
                                         
               
                                             <div>
-                                                      <label for="patentType">نوع الملكية الفكرية:</label>
-                                                      <input type="radio" id="utility" name="patentType" value="utility">
-                                                      <label for="utility">Utility</label>
-                                                      <input type="radio" id="design" name="patentType" value="design">
-                                                      <label for="design">Design</label>
-                                                      <input type="radio" id="plant" name="patentType" value="plant">
-                                                      <label for="plant">Plant</label>
-                                                    </div>
+                                                      <label for="patentType">اختر نوع الملكية الفكرية:</label>
+                                                      <input type="radio" id="utility" name="patentType" value="utility"style="margin-right: 5px;" >
+                                                      <label for="utility" style="margin-right: 5px;">Utility</label>
+                                                      <input type="radio" id="design" name="patentType" value="design"style="margin-right: 5px;">
+                                                      <label for="design" style="margin-right: 5px;">Design</label>
+                                                      <input type="radio" id="plant" name="patentType" value="plant"style="margin-right: 5px;">
+                                                      <label for="plant" style="margin-right: 5px;">Plant</label>
+                                                    </div><br> 
                                         
               
               
               
-                             <label>بلاد الملكية الفكرية :</label><br>               
+                             <label>اختر بلد الملكية الفكرية: </label><br>               
               
                              <input type="text" id="countrySearch" placeholder="ابحث عن دولة  ">
               
@@ -69,9 +71,10 @@
                           </div>
                           <div class="modal__footer">
                              <div class="modal__footer">
-                                <button class="button button--primary" type="submit">اطرح فكررتك في المزاد الان</button>
+                                <button class="button button--primary" type="submit">اطرح فكرتك في المزاد الان</button>
                             </div>
-                        </form>
+        </form>
+                        
                     
           <script src="../js/create.js"></script>
 </body>

@@ -82,7 +82,7 @@ h1{
     color: #D55E2D;
   }
   
-  .request {
+  #request {
     margin-top: 1.5rem;
     width: 100%;
     border: 1px solid transparent;
@@ -95,7 +95,7 @@ h1{
     font-family: 'Tajawal', sans-serif;
   }
   
-  .request:hover {
+  #request:hover {
     background-color: #2F5D8C;
     color: #fff;
     transition: .2s;
