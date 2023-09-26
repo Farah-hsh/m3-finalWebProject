@@ -116,4 +116,55 @@ h1{
     font-family: 'REM', sans-serif;
     font-family: 'Tajawal', sans-serif;
   }
+
+  .theAuction{
+    margin-right: 24%;
+  }
+  ul li{
+    list-style: none;
+  }
+  .auction{
+    width: 600px;
+    height: 60px;
+    background: #F9F9F9;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 10px;
+  }
+  
+  .icon{
+    margin-left: 10px;
+  }
+  
+  
+  .textBox {
+    width: calc(100% - 90px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .textContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .span {
+    font-size: 13px;
+    font-family: 'REM', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+  }
+  
+  .h1 {
+    font-size: 16px;
+    font-family: 'REM', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    
+  }
+  
+  
+  
   

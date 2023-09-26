@@ -14,7 +14,107 @@ h1{
     font-family: 'REM', sans-serif;
     font-family: 'Tajawal', sans-serif;
 }
+#menu__toggle {
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+}
 
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+
+.menu__btn > span::before,
+.menu__btn > span::after {
+  content: '';
+}
+
+.menu__btn > span::before {
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  top: 8px;
+}
+
+.menu__box {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #eceff1a6;
+  transition: right 0.25s ease;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  padding: 80px 0 20px; /* Maintained padding adjustments */
+  overflow-y: auto;
+}
+
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  right: 0;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+#signout {
+  display: block;
+  margin: 20px auto; /* Adjusted margin for spacing */
+  padding: 10px 15px;
+  background-color: #FF6F61;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+#signout:hover {
+  background-color: #FF483F;
+}
 
 .card {
     border-radius: 5px;
