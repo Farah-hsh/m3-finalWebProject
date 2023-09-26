@@ -17,7 +17,7 @@ button.addEventListener("click", addValue);
 function addValue(e){
     e.preventDefault();
     if(auctionValue.value != 1000000000){
-        const value = auctionValue.value;
+        let value = auctionValue.value;
         
  
         let newItem = document.createElement("li");
