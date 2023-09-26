@@ -1,0 +1,330 @@
+body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f7f9fc;
+          color: #333;
+        }
+        #menu__toggle {
+          opacity: 0;
+          position: absolute;
+          z-index: 2;
+          width: 40px;
+          height: 40px;
+      }
+      
+      .menu__btn {
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          width: 26px;
+          height: 26px;
+          z-index: 1;
+      }
+      
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: #d55e2d;
+          transition-duration: .25s;
+      }
+      
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+          content: '';
+      }
+      
+      .menu__btn > span::before {
+          top: -8px;
+      }
+      
+      .menu__btn > span::after {
+          top: 8px;
+      }
+      
+      .menu__box {
+          position: fixed;
+          top: 0;
+          right: -300px;
+          width: 300px;
+          height: 100%;
+          background-color: #eceff1a6;
+          transition: right 0.25s ease;
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+          padding: 80px 0 20px; /* Maintained padding adjustments */
+          overflow-y: auto;
+      }
+      
+      #menu__toggle:checked + .menu__btn > span {
+          transform: rotate(45deg);
+      }
+      
+      #menu__toggle:checked + .menu__btn > span::before {
+          top: 0;
+          transform: rotate(0deg);
+      }
+      
+      #menu__toggle:checked + .menu__btn > span::after {
+          top: 0;
+          transform: rotate(90deg);
+      }
+      
+      #menu__toggle:checked ~ .menu__box {
+          right: 0;
+      }
+      
+      .menu__item {
+          display: block;
+          padding: 12px 24px;
+          color: #333;
+          font-family: 'Roboto', sans-serif;
+          font-size: 20px;
+          font-weight: 600;
+          text-decoration: none;
+          transition-duration: .25s;
+      }
+      
+      .menu__item:hover {
+          background-color: #CFD8DC;
+      }
+      
+      #signout {
+          display: block;
+          margin: 20px auto; /* Adjusted margin for spacing */
+          padding: 10px 15px;
+          background-color: #FF6F61;
+          color: #ffffff;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.25s;
+      }
+      
+      #signout:hover {
+          background-color: #FF483F;
+      }
+        
+        .profile-container {
+          width: 80%;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #fff;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile-header {
+          position: relative;
+          text-align: center;
+        }
+        
+        .banner {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+        
+        .profile-pic {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          border: 4px solid white;
+          position: absolute;
+          bottom: -50px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        
+        .profile-header h1 {
+          margin-top: 110px;
+        }
+        
+        .bio, .achievements, .charts, .valuable-idea, .past-ideas, .contact {
+          margin-top: 30px;
+          padding: 20px;
+          border-radius: 5px;
+          background-color: #f7f9fc;
+        }
+        
+        h2 {
+          border-bottom: 2px solid #e0e0e0;
+          padding-bottom: 10px;
+          margin-bottom: 20px;
+          font-size: 1.5em;
+        }
+        
+        .past-ideas .idea {
+          border: 1px solid #e0e0e0;
+          padding: 10px;
+          margin-top: 10px;
+          border-radius: 5px;
+          background-color: #fff;
+        }
+        
+        .status {
+          display: inline-block;
+          padding: 5px 10px;
+          border-radius: 3px;
+          font-size: 0.9em;
+          margin-top: 10px;
+        }
+        
+        .status.sold {
+          background-color: #4CAF50;
+          color: white;
+        }
+        
+        .status.unsold {
+          background-color: #FF5722;
+          color: white;
+        }
+        
+        .footer {
+          text-align: center;
+          margin-top: 40px;
+          padding: 20px 0;
+          color: #666;
+        }
+        
+        a {
+          color: #017C75;
+          text-decoration: none;
+        }
+        
+        a:hover {
+          text-decoration: underline;
+        }
+        .stats {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 30px;
+          padding: 20px;
+          border-radius: 5px;
+          background-color: #f7f9fc;
+        }
+        
+        .ranking, .success-rate {
+          flex: 1;
+          text-align: center;
+          border-radius: 5px;
+          background-color: #fff;
+          margin: 0 10px;
+          padding: 20px 0;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .ranking p, .success-rate p {
+          font-size: 2em;
+          font-weight: bold;
+          margin-top: 20px;
+        }
+        .ongoing-ideas {
+          margin-top: 30px;
+          padding: 20px;
+          border-radius: 5px;
+          background-color: #f7f9fc;
+        }
+        
+        .ongoing-ideas .idea {
+          border: 1px solid #e0e0e0;
+          padding: 10px;
+          margin-top: 10px;
+          border-radius: 5px;
+          background-color: #fff;
+        }
+        
+        .status.ongoing {
+          display: inline-block;
+          padding: 5px 10px;
+          border-radius: 3px;
+          font-size: 0.9em;
+          margin-top: 10px;
+          background-color: #FFC107;
+          color: white;
+        }
+        .ideas {
+          max-height: 400px;  /* Adjust based on your preference */
+          overflow-y: auto;
+          scrollbar-width: thin;  /* For Firefox */
+          scrollbar-color: #888 #f7f9fc;  /* For Firefox */
+        }
+        
+        /* Styling for scrollbars (For Webkit browsers like Chrome, Safari) */
+        .ideas::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        .ideas::-webkit-scrollbar-track {
+          background: #f7f9fc;
+        }
+        
+        .ideas::-webkit-scrollbar-thumb {
+          background-color: #888;
+          border-radius: 10px;
+        }
+        
+        
+        .ideas-container {
+          display: flex;
+          align-items: center;
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .scroll-button {
+          background: rgba(0,0,0,0.6);
+          color: #fff;
+          border: none;
+          padding: 10px 15px;
+          cursor: pointer;
+          transition: background 0.2s ease;
+        }
+        
+        .scroll-button.left {
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+        
+        .scroll-button.right {
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        
+        .scroll-button:hover {
+          background: rgba(0,0,0,0.8);
+        }
+        
+        .ideas {
+          display: flex;
+          flex-wrap: nowrap;
+          overflow-x: scroll;
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+          margin: 0 10px;
+        }
+        
+        .ideas::-webkit-scrollbar {
+          display: none;
+        }
+        
+        .idea {
+          flex: 0 0 auto;
+          width: 250px;
+          margin-right: 15px;
+          padding: 15px;
+          border: 1px solid #e0e0e0;
+          border-radius: 5px;
+          background-color: #fff;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .idea:last-child {
+          margin-right: 0;
+        }
+        
+        .idea:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+          <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="../html/useridea.html"> الرئيسية</a></li>
+                        <li><a class="menu__item" href="../html/create.html">اطرح فكرة اخره</a></li>
+                        <li><a class="menu__item" href="../html/profile.html">البروفايل</a></li>
+                        <li><a class="menu__item" href="#">التصل معنى</a></li>
+                        <li><button id="signout">تسجيل خروج</button></li>
+                    </ul>
+                </div>
+                
+    <div class="profile-container">
+        <!-- Profile Picture & Banner -->
+        <div class="profile-header">
+            <img src="banner.jpg" alt="Banner Image" class="banner">
+            <img src="profile.jpg" alt="Profile Image" class="profile-pic">
+            <h1>lama aldawood</h1> <!-- Name of the profile holder -->
+        </div>
+        
+        <!-- Bio -->
+        <div class="bio">
+            <h2>About Me</h2>
+            <p>lama aldawood is an innovative thinker with a track record of successful ideas...</p>
+        </div>
+
+        <div class="stats">
+            <div class="ranking">
+                <h2>Website Ranking</h2>
+                <p>#3</p>
+            </div>
+        
+            <div class="success-rate">
+                <h2>Success Rate</h2>
+                <p>72% of ideas sold</p>
+            </div>
+        </div>
+        
+
+        <!-- Achievements & Skills -->
+        <div class="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Winner of XYZ innovation award in 2022.</li>
+                <li>Recognized as top innovator by ABC Company.</li>
+                <!-- ... more achievements ... -->
+            </ul>
+        </div>
+        
+        <!-- Charts Section -->
+        <div class="charts">
+            <h2>Performance Overview</h2>
+            <!-- You'd typically embed charts here using a library or software of your choice -->
+            <p>Charts showing success metrics, areas of interest, etc.</p>
+        </div>
+        
+        <!-- Most Valuable Idea Sold -->
+        <div class="valuable-idea">
+            <h2>Most Valuable Idea Sold</h2>
+            <p>SmartHome Integration - An idea that revolutionized home automation by...</p>
+        </div>
+        
+        <!-- Past Ideas -->
+        <div class="ideas-container">
+            <button class="scroll-button left">&lt;</button>
+            <div class="ideas past-ideas">
+                <h2>Past Ideas</h2>
+                <div class="idea">
+                    <h3>Urban Farming Initiative</h3>
+                    <p>Transforming urban rooftops into productive green spaces...</p>
+                    <span class="status sold">Sold</span>
+                </div>
+                <div class="idea">
+                    <h3>Mobile Health Clinics</h3>
+                    <p>Delivering primary healthcare to remote areas via mobile units...</p>
+                    <span class="status unsold">Not Sold</span>
+                </div>
+                <div class="idea">
+                    <h3>Smart Traffic Management</h3>
+                    <p>Utilizing AI to optimize traffic flow in urban areas...</p>
+                    <span class="status sold">Sold</span>
+                </div>
+                <div class="idea">
+                    <h3>Water Purification Pods</h3>
+                    <p>Portable devices providing instant access to clean water...</p>
+                    <span class="status sold">Sold</span>
+                </div>
+                <div class="idea">
+                    <h3>Wireless Charging Roads</h3>
+                    <p>Highways that charge electric vehicles as they drive...</p>
+                    <span class="status unsold">Not Sold</span>
+                </div>
+                <div class="idea">
+                    <h3>Virtual Travel Experiences</h3>
+                    <p>Offering immersive travel experiences from the comfort of home...</p>
+                    <span class="status sold">Sold</span>
+                </div>
+                <div class="idea">
+                    <h3>AI Personal Fitness Coaches</h3>
+                    <p>Artificial intelligence guiding users through personalized workouts...</p>
+                    <span class="status unsold">Not Sold</span>
+                </div>
+                <div class="idea">
+                    <h3>Automated Urban Farming</h3>
+                    <p>Self-sustaining farms in urban settings using advanced automation...</p>
+                    <span class="status sold">Sold</span>
+                </div>
+            </div>
+            <button class="scroll-button right">&gt;</button>
+        </div>
+
+        <!-- Ongoing Ideas -->
+        <div class="ideas-container">
+            <button class="scroll-button left">&lt;</button>
+            <div class="ideas ongoing-ideas">
+                <h2>Ongoing Ideas</h2>
+                <div class="idea">
+                    <h3>AI-Driven Mental Health Apps</h3>
+                    <p>Building a prototype for an application that uses artificial intelligence to offer mental health support...</p>
+                    <span class="status ongoing">In Progress</span>
+                </div>
+                <div class="idea">
+                    <h3>Zero Waste Lifestyle App</h3>
+                    <p>An app to guide individuals on adopting a sustainable, zero-waste lifestyle...</p>
+                    <span class="status ongoing">In Progress</span>
+                </div>
+                <div class="idea">
+                    <h3>Decentralized Social Networks</h3>
+                    <p>Envisioning a future without centralized social media platforms...</p>
+                    <span class="status ongoing">In Progress</span>
+                </div>
+                <div class="idea">
+                    <h3>Sustainable Packaging Solutions</h3>
+                    <p>Revolutionizing the packaging industry with biodegradable materials...</p>
+                    <span class="status ongoing">In Progress</span>
+                </div>
+                <div class="idea">
+                    <h3>Personal Health Monitors</h3>
+                    <p>Wearable devices that continuously monitor and provide health insights...</p>
+                    <span class="status ongoing">In Progress</span>
+                </div>
+                <div class="idea">
+                    <h3>Remote Team Building Activities</h3>
+                    <p>Platforms offering unique team building exercises for remote teams...</p>
+                    <span class="status ongoing">In Progress</span>
+                </div>
+                <div class="idea">
+                    <h3>AI-based Recipe Creators</h3>
+                    <p>Using machine learning to suggest recipes based on ingredients at hand...</p>
+                    <span class="status ongoing">In Progress</span>
+                </div>
+            </div>
+            <button class="scroll-button right">&gt;</button>
+        </div>
+
+        <!-- Contact & Social Links -->
+        <div class="contact">
+            <h2>Contact & Social</h2>
+            <p>Email: lamaexample.com</p>
+            <p>LinkedIn: <a href="#">linkedin.com/in/lama</a></p>
+            <p>Twitter: <a href="#">@laideas</a></p>
+        </div>
+
+        <!-- Footer (optional) -->
+        <div class="footer">
+            <p>lama aldawood</p>
+        </div>
+    </div>
+    <script src="../js/profile.js"></script>
+</body>
+</html>
