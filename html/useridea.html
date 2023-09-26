@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <meta charset="UTF-8">
+
     <title>Idea Submission</title>
 <link rel="stylesheet" href="../CSS/useridea.css"></head>
 <body dir="rtl">
-          <section class="mainheader">
-          <header> 
-                    <!-- img --> 
-                    <img src="./~$هَامِي (5).png" style="margin-right: auto;"> 
-            <!-- signingup --> 
-               </header> 
-             
-             
-             
-             
-            <!-- nav items --> 
-            <nav > 
-                <ul> 
-                   <li><a href="../html/main.html"> الرئيسية</a></li> 
-                   <li><a href="../html/about us.html"> المزاد</a></li> 
-                   <li><a href="../html/about us.html"> من نحن؟</a></li> 
-                </ul> 
-             
-            </nav> 
-          </section>
+   
+
+   <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+          <span></span>
+      </label>
+      <ul class="menu__box">
+          <li><a class="menu__item" href="#"> الرئيسية</a></li>
+          <li><a class="menu__item" href="../html/create.html">اطرح فكرة اخره</a></li>
+          <li><a class="menu__item" href="../html/profile.html">البروفايل</a></li>
+          <li><a class="menu__item" href="#">التصل معنى</a></li>
+          <li><button id="signout">تسجيل خروج</button></li>
+      </ul>
+  </div>
+  
+
              
             <!-- //////////////////////////// -->
   <section id="heading"> 
      <h1>اهلا و سهلاً,<br>بأصحاب العقول المبدعلة و الأفكار الواعدة</h1>
+</section>
+<section class="first-infobox">
+   <div class="info-box">
+      <div class="info-item">
+          <h3>عدد الافكار حاليا في المزاد</h3>
+          <p class="number" data-target="41">0</p>
+      </div>
+      <div class="info-item">
+          <h3>نسبة نجاح البيع</h3>
+          <p >87%</p>
+      </div>
+      <div class="info-item">
+          <h3>عدد الافكار كله</h3>
+          <p class="number" data-target="3120">0</p>
+      </div>
+  </div>
 </section>
 <section class="mid">
 <section id="cards-section">
@@ -48,55 +63,42 @@
         </section>
 </section>
 
-   <form id="idea-form">
-      <div class="form">
-	
-         <div class="modal">
-            <div class="modal__header">
-               <span class="modal__title">اطرح فكرتك</span><button class="button button--icon"><svg width="24" viewBox="0 0 24 24" height="24" xmlns="http://www.w3.org/2000/svg">
-                     <path fill="none" d="M0 0h24v24H0V0z"></path>
-                     <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg></button>
-            </div>
-            <div class="modal__body">
-                    <div class="input">
-                              <label class="input__label">اسم الفكرة </label>
-                              <input class="name" name="name" type="text"> 
-                          </div>
-                          <div class="input">
-                              <label class="input__label">نبذة الفكرة</label>
-                              <textarea class="description" name="description"></textarea>
-                              <p class="input__description">أعط مشروعك وصفًا جيدًا حتى يعرف الجميع الهدف منه</p>
-                          </div>
-                          
+<div class="info-box">
+   <div class="info-item">
+    <div class="info-container">
+        <div class="info-item">
+            <h3>بعض التعليمات الهامة</h3>
+        </div>
+        <div class="info-item">
+            <h3>البلاد ذات أكبر عدد من البراءات</h3>
+            <p><span class="number" data-target="1500000">0</span> - الصين</p>
+            <p><span class="number" data-target="1400000">0</span> - الولايات المتحدة الأمريكية</p>
+            <p><span class="number" data-target="1300000">0</span> - اليابان</p>
+        </div>
+        <div class="info-item">
+            <h3>أسرع موافقة على البراءة</h3>
+            <p><span class="number" data-target="30">0</span> أيام - أستراليا</p>
+            <p><span class="number" data-target="35">0</span> أيام - كندا</p>
+            <p><span class="number" data-target="40">0</span> أيام - المملكة المتحدة</p>
+        </div>
+        <div class="info-item">
+            <h3>أكبر عدد من البراءات الممنوحة للمتقدمين الأجانب</h3>
+            <p><span class="number" data-target="500000">0</span> - الولايات المتحدة الأمريكية</p>
+            <p><span class="number" data-target="480000">0</span> - الصين</p>
+            <p><span class="number" data-target="450000">0</span> - ألمانيا</p>
+        </div>
+        <div class="info-item">
+            <h3>أكثر البراءات تأثيرًا</h3>
+            <p><span class="number" data-target="2500">0</span> - الولايات المتحدة الأمريكية</p>
+            <p><span class="number" data-target="2450">0</span> - ألمانيا</p>
+            <p><span class="number" data-target="2400">0</span> - اليابان</p>
+        </div>
+    </div>
+    
+<input type="text" id="search" placeholder="ابحث عن دولة...">
+    <div id="results"></div>
 
-                              <div>
-                                        <label for="patentType">نوع الملكية الفكرية:</label>
-                                        <input type="radio" id="utility" name="patentType" value="utility">
-                                        <label for="utility">Utility</label>
-                                        <input type="radio" id="design" name="patentType" value="design">
-                                        <label for="design">Design</label>
-                                        <input type="radio" id="plant" name="patentType" value="plant">
-                                        <label for="plant">Plant</label>
-                                      </div>
-                          
-
-
-
-               <label>بلاد الملكية الفكرية :</label><br>               
-
-               <input type="text" id="countrySearch" placeholder="ابحث عن دولة  ">
-
-           <div id="patentcountries"> </div>
-
-      
-        
-               <div id="selectedCountries"></div><br>
-            </div>
-            <div class="modal__footer">
-               <div class="modal__footer">
-                  <button class="button button--primary" type="submit">اطرح فكررتك في المزاد الان</button>
-              </div>
-          </form>
+   
       
     
     <script src="../JS/useridea.js"></script>
