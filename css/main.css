@@ -186,9 +186,7 @@ color: #D55E2D  ;
 }
 
 
-.now{
 
-}
 
 
 /* nav */
@@ -361,6 +359,11 @@ h5{
 padding-right: 8px;
 color: #073103;
 
+}
+.now h1{
+  font-size: 55px;
+  color:#2F5D8C;
+  justify-content: space-around;
 }
 
 .button4{
