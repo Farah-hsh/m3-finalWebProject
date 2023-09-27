@@ -45,13 +45,14 @@ h1{
   #idea_name {
     font-size: 1.25rem;
     line-height: 1.75rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #2F5D8C;
   }
   
   #idea_description {
     font-size: 0.75rem;
     line-height: 1rem;
+    font-weight: 600;
   }
   #idea_patentType{
     font-weight: 700;
