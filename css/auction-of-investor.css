@@ -29,6 +29,7 @@ h1{
   width: 26px;
   height: 26px;
   z-index: 1;
+
 }
 
 .menu__btn > span,
@@ -40,11 +41,15 @@ h1{
   height: 2px;
   background-color: #2F5D8C;
   transition-duration: .25s;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
 }
 
 .menu__btn > span::before,
 .menu__btn > span::after {
   content: '';
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
 }
 
 .menu__btn > span::before {
@@ -95,6 +100,8 @@ h1{
   font-weight: 600;
   text-decoration: none;
   transition-duration: .25s;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
 }
 
 .menu__item:hover {
@@ -107,13 +114,19 @@ h1{
   padding: 10px 15px;
   background-color: #D55E2D;
   color: #ffffff;
-  border: none;
+  border-radius: 5px;
+  border-color: #D55E2D;
   cursor: pointer;
   transition: background-color 0.25s;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+  margin-top: 60px;
 }
 
 #signout:hover {
   background-color: #2F5D8C;
+  border-color: #2F5D8C;
+  transition: .2;
 }
 
 .card {
