@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+@import url('https://fonts.googleapis.com/css2?family=REM&family=Tajawal:wght@300&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +35,8 @@ nav ul{
 nav ul li a{
   text-decoration: none;
   color:#2b3658 ;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
   
 }
 nav ul li a:hover{
@@ -51,6 +52,8 @@ h1 {
   margin: 2rem 0;
   font-size: 2.5rem;
   color:  #A0B3C1;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
 }
 
 
@@ -75,6 +78,8 @@ h1 {
   align-items: center;
   position: relative;
   cursor: pointer;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
 }
 .accordion-item-header::after {
   content: "\002B";
@@ -84,6 +89,7 @@ h1 {
 }
 .accordion-item-header.active::after {
   content: "\2212";
+  
 }
 .accordion-item-body {
   max-height: 0;
@@ -94,6 +100,8 @@ h1 {
   padding: 1rem;
   line-height: 1.5rem;
   border-top: 1px solid;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
   border-image: linear-gradient(to right, transparent, #f17633 , transparent) 1;
 }
 
