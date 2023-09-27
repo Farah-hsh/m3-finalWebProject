@@ -270,7 +270,6 @@
         .input__field:focus {
           outline: none;
           border-color: #007dab;
-          box-shadow: 0 0 0 1px #007dab, 0 0 0 4px rgba(0, 125, 171, 0.25);
         }
         
         .input__field--textarea {
