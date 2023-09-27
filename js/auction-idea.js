@@ -28,7 +28,7 @@ button.addEventListener("click", function(){
             <div class="icon"><i class="fa-solid fa-circle-user fa-2x" style="color: #2f5d8c;"></i></div>
             <div class="textBox">
                 <div class="textContent">
-                    <p class="h1">${value}</p>
+                    <p class="h1">${value} ر.س.</p>
                        <span class="span">الأن</span>
                </div>
            <div>

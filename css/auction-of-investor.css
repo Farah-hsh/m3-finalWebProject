@@ -199,9 +199,7 @@ h1{
   margin: 0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Golos+Text&family=Marhey:wght@500&display=swap');
-body{
-  
-}
+
 .footer{
   /* background-color: #0f214f; */
   
@@ -307,8 +305,4 @@ transform: translateX(100%);
 100% {
 transform: translateX(-100%);
 }
-}
-
-.pfp{
-
 }
