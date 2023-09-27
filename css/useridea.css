@@ -204,6 +204,7 @@
           align-items: center;
           justify-content: center;
           border-radius: 10px;
+          padding: 15px;
         }
 
         #cards-section h2 {
@@ -466,6 +467,3 @@ transform: translateX(-100%);
 }
 }
 
-.pfp{
-
-}
