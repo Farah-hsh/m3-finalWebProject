@@ -14,7 +14,7 @@ box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.2
 
 .now h1{
 color: #071436 ;
-margin-top: 40px;
+margin-top: 100px;
 font-size: 43px;
 font-family: 'Tajawal', sans-serif;
 text-align: center;
@@ -24,9 +24,7 @@ text-align: center;
 
 /* <!-- img -->  */
 
-header img{
-/* height: 70px; */
-}
+
 
 
 /* <!-- <header signingup language button>> --> */
@@ -324,7 +322,7 @@ align-items: center;
 padding: 20px;
 color:#2F5D8C;
 height: 340px;
-font-size: 37px;
+font-size: 30px;
 }
 
 .main2{
@@ -396,9 +394,7 @@ padding: 0;
 margin: 0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Golos+Text&family=Marhey:wght@500&display=swap');
-body{
 
-}
 .footer{
 /* background-color: #0f214f; */
 
@@ -507,9 +503,7 @@ transform: translateX(-100%);
 }
 }
 
-.pfp{
 
-}
 
 
 /* .container */
