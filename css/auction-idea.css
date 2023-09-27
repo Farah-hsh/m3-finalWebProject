@@ -2,7 +2,7 @@
 body{
   font-family: 'REM', sans-serif;
   font-family: 'Tajawal', sans-serif;
-  background-color: #F9F9F9;
+  background-color: #D8D8D6;
 }
 h1{
   text-align: center;
@@ -17,10 +17,10 @@ h1{
   margin-left: 50%;
 }
 .card {
-   margin-right: calc(50%);
+   margin-right: 54%;
     width: 600px;
     border-radius: 1rem;
-    background-color: #D8D8D6;
+    background-color: #F9F9F9;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   }
@@ -61,7 +61,7 @@ h1{
   .stats {
     width: 97%;
     border-radius: 0.5rem;
-    background-color: #F9F9F9;
+    background-color: #D8D8D6;
     padding: 0.5rem;
     display: flex;
     justify-content: space-between;
@@ -82,7 +82,7 @@ h1{
     color: #D55E2D;
   }
   
-  .request {
+  #request {
     margin-top: 1.5rem;
     width: 100%;
     border: 1px solid transparent;
@@ -90,13 +90,15 @@ h1{
     padding: 0.5rem 1rem;
     font-size: 1rem;
     line-height: 1.5rem;
+    color: #fff;
+    background-color: #2F5D8C;
     transition: all .3s ease;
     font-family: 'REM', sans-serif;
     font-family: 'Tajawal', sans-serif;
   }
   
-  .request:hover {
-    background-color: #2F5D8C;
+  #request:hover {
+    background-color: #406891;
     color: #fff;
     transition: .2s;
   }
@@ -116,4 +118,55 @@ h1{
     font-family: 'REM', sans-serif;
     font-family: 'Tajawal', sans-serif;
   }
+
+  .theAuction{
+    margin-right: 25.5%;
+  }
+  ul li{
+    list-style: none;
+  }
+  .auction{
+    width: 630px;
+    height: 60px;
+    background: #F9F9F9;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 10px;
+  }
+  
+  .icon{
+    margin-left: 10px;
+  }
+  
+  
+  .textBox {
+    width: calc(100% - 90px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .textContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .span {
+    font-size: 13px;
+    font-family: 'REM', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+  }
+  
+  .h1 {
+    font-size: 16px;
+    font-family: 'REM', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    
+  }
+  
+  
+  
   
