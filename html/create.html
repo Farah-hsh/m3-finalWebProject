@@ -5,6 +5,8 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Document</title>
           <link rel="stylesheet" href="../css/create.css">
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
@@ -16,8 +18,8 @@
                     </label>
                     <ul class="menu__box">
                         <li><a class="menu__item" href="../html/useridea.html"> الرئيسية</a></li>
-                        <li><a class="menu__item" href="./create.html">اطرح فكرة اخره</a></li>
-                        <li><a class="menu__item" href="./profile.html">البروفايل</a></li>
+                        <li><a class="menu__item" href="./create.html">اطرح فكرة </a></li>
+                        <li><a class="menu__item" href="./profile.html">صفحتي</a></li>
                         <li><button id="signout">تسجيل خروج</button></li>
                     </ul>
                 </div>
@@ -70,10 +72,21 @@
                           </div>
                           <div class="modal__footer">
                              <div class="modal__footer">
-                                <button class="button button--primary" type="submit">اطرح فكرتك في المزاد الان</button>
+                                <button class="button button--primary" type="submit" onclick="show()">اطرح فكرتك في المزاد الان</button>
                             </div>
         </form>
-                        
+           <script>
+            show=()=>{
+                Swal.fire({
+              position: "center",
+          icon: "sucess",
+          title: "تمت إضافة فكرتك بنجاح!",
+          showConfirmButton: false,
+          timer: 3000,
+        });
+
+            }
+           </script>             
                     
           <script src="../js/create.js"></script>
 </body>

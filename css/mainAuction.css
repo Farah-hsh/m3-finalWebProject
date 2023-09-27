@@ -4,17 +4,165 @@
     padding:0;
 }
 body{
-  background-color: #D8D8D6;
+  background-color: #F9F9F9;
 }
+header{
+  background-color: #2F5D8C;
+  border: 2px solid #2F5D8C;
+  height: 70px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  } 
+  /* <!-- img -->  */
+  
+  
+  
+  
+  /* <!-- <header signingup language button>> --> */
+  .signingup{
+  
+  margin-top: -50px;
+  display: flex;
+  }
+  .img body{
+  height: 88px;
+  width: 88px;
+  }
+  button{  width: 120px;
+  text-align: center;
+  height: 35px;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 9px;
+  color: #2b3658  ;
+  }
+  
+  button:hover{
+  color: #031801;
+  }
+  
+  .text{
+    color: #ce7d5a;
+  }
+  
+  
+  
+  /* header signingup */
+  .button8 button{
+  margin-right: 16px;
+  font-family: 'Tajawal', sans-serif;
+  background-color:  #ce7d5a;
+  border-radius: 60px ;
+  border-color:  #ce7d5a;
+  color: #c9d1de;
+  }
+  
+  .button8 button:hover{
+  
+  transform: scale(1.05);
+  transition: .3s;
+  
+  }
+  .button10 button{
+  border-radius: 60px solid ;
+  background-color:  #D8D8D6;
+  border-color: #ce7d5a;
+  border-radius: 60px ;
+  color: #012258;
+  }
+  .button10 button:hover{
+  
+  transform: scale(1.05);
+  transition: .3s;
+  }
+  
+  
+  
+  
+  
+  /* زر انشاء الحساب الأن */
+  .button77{
+  
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  font-family: 'Tajawal', sans-serif;
+  }
+  .button77 button {
+  border-radius: 19px  ;
+  width: 200px;
+  height: 67px;
+  font-size: 24px ;
+  font-family: 'Tajawal', sans-serif;
+  color: rgb(2, 6, 51);
+  }
+  .button77 button:hover{
+  background-color: #D8D8D6;
+  color: #D55E2D  ;
+  }
 h1{
     text-align: center;
-    font-size: 4rem;
+    font-size: 2rem;
     margin-top: 5%;
     color: #2F5D8C;
     font-family: 'REM', sans-serif;
     font-family: 'Tajawal', sans-serif;
 }
-
+.container{
+  display: flex;
+  margin-bottom: 200px;
+  justify-content: center;
+}
+.card2{
+  border: 1px solid #2F5D8C;
+  background-color: #2F5D8C;
+  border-radius: 8px;
+  width: 270px;
+  height: 90px;
+  padding: 20px;
+  text-align: center;
+  font-family: 'REM', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+}
+.card2 h2{
+  color: #D8D8D6;
+}
+.card2 p{
+  font-size: 1.5rem;
+}
+/* nav */
+nav{
+  border: 2px solid #D8D8D6;
+  border-radius:  2px;
+  background-color:  #D8D8D6;
+  height: 60px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0;
+  /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+  }
+  nav ul{
+  list-style: none;
+  display:flex;
+  font-size: 1.3rem;
+  margin-left: 1100px;
+  gap: 30px;
+  font-family: 'Tajawal', sans-serif;
+  }
+  nav ul li a{
+  text-decoration: none;
+  color:#2b3658 ;
+  
+  }
+  nav ul li a:hover{
+  color: #091831;
+  }
+  /* nav don */
+  h2{
+    font-family: 'REM', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+  }
 .card {
     border-radius: 5px;
     width: 210px;
@@ -100,27 +248,27 @@ h1{
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Golos+Text&family=Marhey:wght@500&display=swap');
 
 .footer{
-  /* background-color: #0f214f; */
-  
-  background-color: #2F5D8C;
-  display: flex;
-  justify-content: space-around;
-  height: 310px; 
-  margin-top: 200px; 
+/* background-color: #0f214f; */
+
+background-color: #2F5D8C;
+display: flex;
+justify-content: space-around;
+height: 310px; 
+margin-top: 200px; 
 }
 
 .subscribe{
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 110px;
-  
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+margin-left: 110px;
+
 }
 .subscribe h2{
-  margin-bottom: 30px;
-  color: rgb(220, 220, 220);
-  font-size: 1.7rem;
-  font-family: 'Tajawal', sans-serif;
+margin-bottom: 30px;
+color: rgb(220, 220, 220);
+font-size: 1.7rem;
+font-family: 'Tajawal', sans-serif;
 }
 .qoute h2{
 color:  rgb(220, 220, 220);
@@ -130,49 +278,50 @@ font-size: 55px;
 }
 
 .qoute h1{
-  font-family: 'Tajawal', sans-serif;
-  color: #D55E2D;
+font-family: 'Tajawal', sans-serif;
 }
 .qoute{
-  margin-top: 50px;
-  color: rgb(220, 220, 220);
-  font-size: 1.2rem;
-  margin-left: 20px;
+margin-top: 50px;
+color: rgb(220, 220, 220);
+font-size: 1.2rem;
+margin-left: 20px;
 }
 .list3{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: -50px;
-  font-family: 'Tajawal', sans-serif;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: -50px;
+font-family: 'Tajawal', sans-serif;
 
 }
 .button2:hover{
-  transform: scale(1.04);
-  transition: .3s;
+transform: scale(1.04);
+transition: .3s;
 
 }
 .footer-part{
-  margin-top: 50px;
-  display: flex;
-  
+margin-top: 50px;
+display: flex;
+
 }
 .footer-part ul{
-  margin-right: 40px;
-  list-style: none;
+margin-right: 40px;
+list-style: none;
 }
 .footer-part ul li a{
-  color: whitesmoke;
-  font-size: 1rem;
-  text-decoration: none;
+color: whitesmoke;
+font-size: 1rem;
+text-decoration: none;
+font-family: 'REM', sans-serif;
+font-family: 'Tajawal', sans-serif;
 }
 
 
 .footer-part li:hover {
-  transform: scale(1.03);
-  color: rgb(220, 220, 220);
-  transition: .2s;
+transform: scale(1.03);
+color: rgb(220, 220, 220);
+transition: .2s;
 }
 
 /*  */
@@ -192,9 +341,9 @@ margin-right: 10px;
 border: yellow solid 2px
 }
 .scroll-container{
-  width: 800px;
-  border: 2px rgb(148, 7, 7) solid;
-  margin-right: 230px;
+width: 800px;
+border: 2px rgb(148, 7, 7) solid;
+margin-right: 230px;
 }
 
 @keyframes scroll {
