@@ -59,10 +59,10 @@ color: #031801;
 .button8 button{
 margin-right: 16px;
 font-family: 'Tajawal', sans-serif;
-background-color:  #D55E2D;
+background-color:  #ce7d5a;
 border-radius: 60px ;
-border-color:  #D55E2D;
-color: #012258;
+border-color:  #ce7d5a;
+color: #c9d1de;
 }
 
 .button8 button:hover{
@@ -74,7 +74,7 @@ transition: .3s;
 .button10 button{
 border-radius: 60px solid ;
 background-color:  #D8D8D6;
-border-color: #f17633;
+border-color: #ce7d5a;
 border-radius: 60px ;
 color: #012258;
 }
@@ -90,10 +90,10 @@ transition: .3s;
 
 /* زر انشاء الحساب الأن */
 .button77{
-margin-top: 77px;
+
 display: flex;
 justify-content: center;
-margin-top: 10px;
+margin-top: 80px;
 font-family: 'Tajawal', sans-serif;
 }
 .button77 button {
@@ -465,6 +465,8 @@ list-style: none;
 color: whitesmoke;
 font-size: 1rem;
 text-decoration: none;
+font-family: 'REM', sans-serif;
+font-family: 'Tajawal', sans-serif;
 }
 
 
