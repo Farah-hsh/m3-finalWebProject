@@ -51,10 +51,10 @@
 <div class="signingup" dir="ltr">
     <div class="button8">
 
-    <button href="../html/signin.html"><b>إنشاء حساب</b></button>
+    <button onclick="signin()"><b>إنشاء حساب</b></button>
 </div>
 <div class="button10">
-    <button href="../html/login.html"><b>تسجيل دخول</b></button>
+    <button onclick="login()"><b>تسجيل دخول</b></button>
 </div>
 </div>
 
@@ -69,7 +69,7 @@
 </div>
 <!-- //////////////////////////// -->
 
-<div class="now" style="">
+<div class="now">
 <h1>الأبرز الأن في مزادنا</h1>
 
 <br>
@@ -257,7 +257,15 @@
 
     </footer>
     <!-- /////////////////////////////////////////// -->
+<script>
+    signin=()=>{
+        window.location.href = "./signin.html";
+    }
+    login = () => {
+        window.location.href = "./login.html";
 
+    }
+</script>
 
   
    
