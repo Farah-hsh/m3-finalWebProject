@@ -18,6 +18,32 @@
   
 //   updateCounter();
 // });
+// for the first info-box
+document.addEventListener("DOMContentLoaded", function () {
+    const numbers = document.querySelectorAll('.number1');
+
+    numbers.forEach(number => {
+        const updateCount = () => {
+            const target = +number.getAttribute('data-target');
+            const count = +number.innerText;
+
+            const increment = target / 600;
+
+            if (count < target) {
+                number.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 5);
+            } else {
+                number.innerText = target;
+            }
+        };
+
+        updateCount();
+    });
+});
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const numbers = document.querySelectorAll('.number');
 
@@ -26,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const target = +number.getAttribute('data-target');
             const count = +number.innerText;
 
-            const increment = target / 600;
+            const increment = target / 6000;
 
             if (count < target) {
                 number.innerText = Math.ceil(count + increment);
